@@ -54,6 +54,7 @@ int main()
 		}
 	}
 	cout<<enroll<<endl;
+	
 	score first[enroll];
 	score second[enroll];
 	score third[enroll];
