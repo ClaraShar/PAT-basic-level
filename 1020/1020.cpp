@@ -14,11 +14,11 @@ mooncake m[1000];
 
 bool cmp(mooncake A,mooncake B)   
 {
-	if(A.each_sale!=B.each_sale)         //让结构体按单位售价递减排序 
+	if(A.each_sale!=B.each_sale)//让结构体按单位售价递减排序 
 	{
 		return A.each_sale>B.each_sale;
 	}
-	else                //如果单位售价相同的话，按总售价递减排序 
+	else//如果单位售价相同的话，按总售价递减排序 
 	{
 		return A.sale>B.sale;
 	}
