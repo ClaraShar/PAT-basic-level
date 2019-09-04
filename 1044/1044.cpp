@@ -53,17 +53,16 @@ void to_earth(string s){
 int main(){
 	int n;
 	cin>>n;
-	cin.ignore();
+	cin.ignore();//cin和getline同时使用时需要清除缓冲区
 	regex reg("[0-9]+");
 	for(int i=0;i<n;++i){
 		string s;
-		getline(cin,s);
+		getline(cin,s);//getline可以接受输入字符串带空格
 		bool bValid=regex_match(s,reg);
 		if(bValid)//全数字
 			to_mars(s);
 		else
 			to_earth(s);
 	}
-	cin>>n;
 	return 0;
 }
